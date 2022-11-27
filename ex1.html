@@ -1,44 +1,37 @@
 
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap" rel="stylesheet"> 
-</head>
-<body>
-    <textarea cols="120" rows="50">
-        <html>
-
-<head>
-    <title>ex1</title>
+    <title>Przykład nr tutaj wpisz odpowiedni nume </title>
     <script language="JavaScript">
-        function WinOpen() {
+        function WinOpen_Cylkowski() {
             window.open("obraz.html", "okienko", "toolbar=no,directories=no,menubar=no,height=280,width=160,top=200,left=200");
-        }
-        function okno_zamknij() {
-            window.close()
         }
     </script>
 </head>
-
+<!--
+Metoda open() otwiera nowe okno przeglądarki lub nową kartę, w zależności od ustawień przeglądarki i wartości parametrów
+toolbar=no  np. ukrywa przyciski katalogów
+directories=no, - wartość yes lub no (1 lub 0): pokazuje lub ukrywa przyciski katalogów
+menubar=no, -wartość yes lub no (1 lub 0): pokazuje lub ukrywa menu przeglądarki
+height=280, - wartość w pixelach : ustawia wysokość okna
+width=160, - wartość w pixelach : ustawia szerokość okna
+top=200, - wartość w pixelach : ustawia położenie okna względem góry ekranu
+left=200 - wartość w pixelach : ustawia położenie okna względem lewej strony ekranu
+window.close()
+-->
 <body>
     <form>
-        <input type="button" name="przycisk" value="Nowa Strona" onclick="WinOpen(' ')">
-        <input type="button" value="zamknij okno" onclick="okno_zamknij()" />
-
+        <input type="button" name="przycisk" value="Nowa Strona" onclick="WinOpen_Cylkowski(' ')">
+        Dodanie przycisku, funkcja "button" nazwa "przycisk" dzałanie 1 klick , funkcja otwieranie nowej storny o naziwe "WinOpen_Cylkowski"
     </form>
-</body>
 
-</html>
+    <form action="https://github.com/Oliwer410/java-zadanie1-2">
+        <input type="submit" value="Home" />
+    </form>
 
-    </textarea>
-    <br>
-    <input class="klikacz" type="button" value="Powrót" onClick="location.href='index.html';"/><br>
+    <form action="https://github.com/Oliwer410/java-zadanie1-2">
+        <input type="submit" value="Zadanie2" />
+    </form>
+
 </body>
 </html>
